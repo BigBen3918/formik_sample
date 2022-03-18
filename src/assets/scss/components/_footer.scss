@@ -1,0 +1,220 @@
+/* start footer */
+.footer {
+    background: #f2f2f2;
+    padding: 80px 0 45px;
+
+    .footer-inner {
+        display: flex;
+        width: calc(100% + 15px * 2);
+        margin-left: -15px;
+        margin-right: -15px;
+
+        .footer-block {
+            padding: 0 15px;
+
+            &:first-child {
+                min-width: 220px;
+                margin-right: 104px;
+            }
+
+            &:last-child {
+                margin-left: auto;
+            }
+
+            @media screen and (max-width: 991px) {
+                &:first-child {
+                    margin-right: 35px;
+                }
+            }
+
+            @media screen and (max-width: 767px) {
+                &:first-child {
+                    margin-right: 0;
+                }
+            }
+        }
+
+        @media screen and (max-width: 575px) {
+            flex-wrap: wrap;
+            justify-content: space-between;
+
+            .footer-block {
+                margin-top: 30px;
+
+                &:last-child {
+                    width: 100%;
+                }
+            }
+        }
+    }
+
+    .link {
+        font-size: 20px;
+        font-weight: 500px;
+        color: #79777c;
+        border-bottom: 1px solid #79777c;
+        text-decoration: none;
+    }
+
+    .footer-nav {
+        margin-top: 16px;
+        list-style: none;
+
+        li {
+            margin-bottom: 10px;
+
+            a {
+                font-size: 18px;
+                font-weight: 500;
+                color: #79777c;
+                transition: all 0.3s ease-in-out;
+                text-decoration: none;
+
+                &:hover,
+                &:focus {
+                    color: #6eba45;
+                }
+
+                &:active {
+                    color: #3c7020;
+                }
+            }
+        }
+    }
+
+    .copyright {
+        margin-top: 35px;
+
+        p {
+            font-size: 14px;
+            margin-top: 14px;
+            color: #79777c;
+        }
+
+        a {
+            font-family: inherit;
+            color: inherit;
+            pointer-events: none;
+            text-decoration: none;
+        }
+
+        img {
+            width: 217px;
+            filter: saturate(0);
+        }
+    }
+
+    &.under-construction {
+        .footer-inner {
+            justify-content: center;
+
+            .footer-block:last-child {
+                margin-left: auto;
+                margin-right: auto;
+                flex-direction: column;
+                display: flex;
+                align-items: center;
+            }
+        }
+
+        .copyright {
+            margin-top: 90px;
+
+            @media screen and (max-width: 767px) {
+                margin-top: 63px;
+            }
+        }
+    }
+
+    @media screen and (max-width: 991px) {
+        .link {
+            font-size: 16px;
+        }
+
+        .footer-nav li a {
+            font-size: 14px;
+        }
+    }
+
+    @media screen and (max-width: 575px) {
+        .copyright {
+            img {
+                width: 135px;
+            }
+        }
+    }
+}
+
+.socialmedia-links {
+    list-style: none;
+    margin-top: 16px;
+    margin-bottom: 0;
+
+    li {
+        margin-bottom: 23px;
+
+        &:last-child {
+            margin-bottom: 0;
+        }
+
+        a {
+            line-height: 1;
+            font-size: 45px;
+            transition: all 0.3s;
+            color: #79777c;
+            text-decoration: none;
+
+            &:hover,
+            &:focus {
+                color: #6eba45;
+            }
+        }
+    }
+
+    .fa-2x {
+        font-size: inherit;
+    }
+
+    .under-construction & {
+        margin-top: 63px;
+        display: flex;
+        justify-content: center;
+
+        @media screen and (max-width: 575px) {
+            margin-bottom: 42px;
+        }
+
+        li {
+            margin-bottom: 0;
+
+            &:not(:last-child) {
+                margin-right: 58px;
+
+                @media screen and (max-width: 575px) {
+                    margin-right: 26px;
+                }
+            }
+        }
+    }
+
+    @media screen and (max-width: 575px) {
+        display: flex;
+
+        li {
+            margin-right: 25px;
+
+            &:last-child {
+                margin-right: 0;
+            }
+
+            a {
+                font-size: 28px;
+            }
+        }
+    }
+}
+
+.footer-container,
+.footer-inner {
+    padding: 0 24px;
+}

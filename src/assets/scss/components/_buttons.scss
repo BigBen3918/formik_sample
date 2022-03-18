@@ -1,0 +1,61 @@
+$primary: #6eba45;
+
+.login-form a,
+.register-form .register,
+.button {
+    cursor: pointer;
+    display: inline-flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    background: #6eba45;
+    color: #fff;
+    padding: 17px 28px;
+    font-size: 18px;
+    line-height: 22px;
+    border-radius: 3px;
+    transition: all 0.3s ease-in-out;
+    appearance: none;
+    border: 0;
+    box-shadow: none;
+
+    &:hover,
+    &:focus {
+        background: #3b9b07;
+        text-decoration: none;
+        color: #fff;
+        outline: none;
+    }
+
+    &:active {
+        background: #3c7020;
+        color: #fff;
+    }
+
+    @media screen and (max-width: 991px) {
+        font-size: 14px;
+    }
+}
+
+.login-form {
+    .forgotpass {
+        color: $primary;
+        font-size: 18px;
+        font-weight: bold;
+        cursor: pointer;
+
+        &:hover {
+            border-bottom: 1.5px solid $primary;
+        }
+    }
+
+    .button {
+        width: 90%;
+    }
+
+    @media (max-width: 575px) {
+        .button {
+            width: 100%;
+        }
+    }
+}

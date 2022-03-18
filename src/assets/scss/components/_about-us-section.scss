@@ -1,0 +1,75 @@
+.about-us-section{
+	padding: 29px 0 235px;
+
+	.section-inner{
+		display: grid;
+		grid-template-columns: 486px 1fr;
+		align-items: center;
+		grid-gap: 57px;
+	}
+
+	.section-image{
+		img{
+			display: block;
+			max-width: 100%;
+			height: auto;
+		}
+	}
+
+	.section-content{
+		font-size: 22px;
+		text-align: justify;
+
+		.page-caption{
+			margin-bottom: 28px;
+			text-align: left;
+		}
+	}
+
+	@media screen and (max-width: 1199px){
+		padding-bottom: 180px;
+
+		.section-inner{
+			grid-template-columns: 400px 1fr;
+			grid-gap: 40px;
+		}
+
+		.section-content{
+			font-size: 14px;
+			line-height: 22px;
+
+			.page-caption{
+				margin-bottom: 19px;
+			}
+		}
+	}
+
+	@media screen and (max-width: 991px){
+		.section-inner{
+			grid-template-columns: 344px 1fr;
+		}
+	}
+
+	@media screen and (max-width: 767px){
+		padding-bottom: 55px;
+
+		.section-inner{
+			grid-template-columns: 1fr;
+			grid-gap: 23px;
+		}
+
+		.section-image{
+			order: 2;
+			max-width: 280px;
+			margin-left: auto;
+			margin-right: auto;
+		}
+
+		.section-content{
+			.page-caption{
+				margin-bottom: 23px;
+				text-align: center;
+			}
+		}
+	}
+}

@@ -1,0 +1,33 @@
+/* start connect */
+.connect{
+	.hint{
+		background: #F8F8F8;
+		margin-top: 36px;
+		padding: 80px 72px 100px;
+	}
+
+	h3{
+		font-size: 46px;
+		font-weight: 600;
+		margin-bottom: 34px;
+	}
+
+	.button{
+		min-width: 209px;
+	}
+
+	@media screen and (max-width: 767px){
+		.hint{
+			padding: 32px;
+		}
+
+		h3{
+			font-size: 36px;
+		}
+
+		.button{
+			width: 100%;
+			min-width: unset;
+		}
+	}
+}

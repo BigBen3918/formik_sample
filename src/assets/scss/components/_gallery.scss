@@ -1,0 +1,82 @@
+/* start gallery */
+.gallery{
+	margin-top: 136px;
+
+	h3{
+		font-size: 40px;
+		font-weight: 600;
+		margin-bottom: 17px;
+	}
+
+	.gallery-link{
+		color: #6EBA45;
+		margin-top: 60px;
+		display: block;
+		margin-bottom: 154px;
+		font-size: 18px;
+		line-height: 22px;
+		text-decoration: none;
+		transition: all .3s;
+
+		&:hover,
+		&:focus{
+			color: #3B9B07;
+		}
+	}
+
+	@media screen and (max-width: 1199px){
+		margin-top: 54px;
+	}
+}
+
+.gallery-grid{
+	display: grid;
+	grid-template-columns: repeat(4, 1fr);
+	grid-gap: 26px;
+	margin-top: 43px;
+
+	> a{
+		display: block;
+	}
+
+	@media screen and (max-width: 991px){
+		grid-template-columns: repeat(3, 1fr);
+		grid-gap: 14px;
+	}
+
+	@media screen and (max-width: 575px){
+		grid-template-columns: repeat(2, 1fr);
+	}
+}
+
+.comment{
+	position: fixed;
+	background: #6EBA45;
+	border-radius: 50%;
+	height: 70px;
+	width: 70px;
+	padding-left: 4px;
+	right: 20px;
+	bottom: 20px;
+	padding-top: 15px;
+	z-index: 6666;
+	transition: all .4s ease-in-out;
+	cursor: pointer;
+}
+.comment:hover{
+	background: #3B9B07;
+}
+.comment-relative{
+	position: relative;
+}
+.gallery .comment{
+	padding-top: 0;
+}
+.gallery .comment img{
+	margin-top: 14px;
+}
+@media (max-width: 992px){
+	.gallery h3{
+		font-size: 24px;
+	}
+}

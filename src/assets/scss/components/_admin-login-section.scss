@@ -1,0 +1,118 @@
+.admin-login-section{
+	padding: 112px 0 123px;
+	display: grid;
+	grid-template-columns: 89fr 103fr;
+	max-width: 1920px;
+	margin-left: auto;
+	margin-right: auto;
+
+	.section-form{
+		padding: 100px 71px;
+	}
+
+	.login-form{
+		max-width: 448px;
+		margin-left: auto;
+		margin-right: auto;
+		margin-bottom: 36px;
+	}
+
+	.section-image{
+		padding: 54px 71px 43px;
+		border-left: 1px solid #6EBA45;
+
+		img{
+			display: block;
+			max-width: 100%;
+			height: auto;
+		}
+	}
+
+	.form-note{
+		text-align: center;
+		font-size: 18px;
+		color: #79777C;
+		margin-bottom: 0;
+
+		a{
+			color: $primary;
+			text-decoration: none;
+
+			&:hover,
+			&:focus{
+				text-decoration: underline;
+			}
+		}
+	}
+
+	.admin-login-form{
+		h4{
+			text-align: center;
+			font-size: 45px;
+			line-height: 1.2;
+			margin-bottom: 70px;
+			font-weight: 400;
+			color: #79777C;
+		}
+
+		input{
+			width: 100%;
+		}
+
+		.button{
+			width: 100%;
+			margin-top: 27px;
+		}
+	}
+
+	@media screen and (max-width: 1199px){
+		grid-template-columns: 1fr;
+		max-width: 513px;
+		padding: 66px 0 75px;
+
+		.section-form{
+			padding: 0;
+		}
+
+		.section-image{
+			padding: 0;
+			margin-top: 79px;
+			border-left: 0;
+		}
+	}
+
+	@media screen and (max-width: 767px){
+		padding: 34px 21px 52px;
+		max-width: calc(513px + 21px * 2);
+
+		.section-image{
+			margin-top: 46px;
+		}
+
+		.admin-login-form{
+			h4{
+				margin-bottom: 52px;
+			}
+
+			.button{
+				margin-top: 12px;
+			}
+		}
+
+		.login-form{
+			margin-bottom: 26px;
+		}
+	}
+
+	@media screen and (max-width: 575px){
+		.admin-login-form{
+			h4{
+				font-size: 33px;
+			}
+		}
+
+		.form-note{
+			font-size: 13px;
+		}
+	}
+}

@@ -1,0 +1,167 @@
+.first-screen-section {
+    padding: 28px 0 95px;
+
+    .section-inner {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 36px;
+
+        a {
+            text-decoration: none;
+        }
+
+        @media screen and (min-width: 1200px) {
+            .fridge {
+                grid-column: 1 / -1;
+            }
+        }
+
+        @media screen and (max-width: 1199px) {
+            grid-gap: 18px;
+
+            .giftbox {
+                grid-column: 1 / -1;
+            }
+        }
+
+        @media screen and (max-width: 767px) {
+            grid-template-columns: 1fr;
+        }
+    }
+
+    @media screen and (max-width: 1199px) {
+        padding-bottom: 0;
+    }
+}
+
+.first-screen-block {
+    background: #f8f8f8;
+    padding: 75px 75px 92px 36px;
+    position: relative;
+
+    .block-caption {
+        font-size: 30px;
+        line-height: 1.2333;
+        font-weight: 600;
+        color: #79777c;
+        margin-bottom: 125px;
+    }
+
+    .button {
+        min-width: 209px;
+    }
+
+    .block-image {
+        position: absolute;
+
+        img {
+            display: block;
+            width: 100%;
+            height: auto;
+        }
+    }
+
+    &.fridge {
+        @media screen and (min-width: 1200px) {
+            padding-top: 87px;
+            padding-bottom: 116px;
+
+            .block-caption {
+                margin-bottom: 89px;
+            }
+        }
+
+        .block-image {
+            top: 32px;
+            right: 125px;
+            width: 210px;
+        }
+    }
+
+    &.iphone {
+        .block-image {
+            bottom: 24px;
+            right: 132px;
+            width: 109px;
+        }
+    }
+
+    &.giftbox {
+        .block-image {
+            bottom: 26px;
+            right: 46px;
+            width: 225px;
+        }
+    }
+
+    @media screen and (max-width: 1199px) {
+        padding: 36px 9px;
+
+        .block-caption {
+            font-size: 26px;
+            margin-bottom: 36px;
+            max-width: 203px;
+        }
+
+        .button {
+            min-width: 189px;
+            min-height: 50px;
+            padding-top: 5px;
+            padding-bottom: 5px;
+        }
+
+        &.fridge {
+            .block-image {
+                width: 101px;
+                top: auto;
+                bottom: 33px;
+                right: 19px;
+            }
+        }
+
+        &.iphone {
+            padding-left: 130px;
+            padding-right: 16px;
+
+            .block-image {
+                width: 76px;
+                right: auto;
+                left: 21px;
+                bottom: 49px;
+            }
+        }
+
+        &.giftbox {
+            @media screen and (min-width: 576px) {
+                padding: 54px 16px;
+            }
+
+            .block-image {
+                width: 204px;
+                bottom: 19px;
+                right: 42px;
+            }
+        }
+    }
+
+    @media screen and (max-width: 575px) {
+        .block-caption {
+            font-size: 24px;
+            margin-bottom: 40px;
+        }
+
+        &.fridge {
+            .block-caption {
+                margin-bottom: 23px;
+            }
+        }
+
+        &.giftbox {
+            .block-image {
+                width: 107px;
+                bottom: 67px;
+                right: 11px;
+            }
+        }
+    }
+}
